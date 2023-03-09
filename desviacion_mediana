@@ -1,0 +1,25 @@
+#desviacion de porcentaje
+
+sd(orangeec1$Internet.penetration...population)
+
+
+#sd es la funcion de desviacion estandar.
+# Entre los parentesis colocamos el data set.
+# Despues del $ colocamos las variables.
+
+
+#- Variable de desviacion
+desv <- sd(orangeec1$Internet.penetration...population)
+desv
+#Almacenamos la funcion en una variable para facilitar su uso.
+
+#- Promedio
+mean(orangeec1$Internet.penetration...population)
+prom <- mean(orangeec1$Internet.penetration...population)
+prom
+
+#Lo mismo pero para sacar el promedio.
+
+#-Coeficiente de variacion
+coefvar <- (desv/prom)*100
+coefvar

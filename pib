@@ -1,0 +1,18 @@
+ggplot()+geom_histogram(data=orangeec1,
+                        aes(x=GDP.PC), fill="orange",color="red",
+                        binwidth = 2000)+
+  labs(x="Pib per capital", y="cantidad de paises",
+       title= "PIB per capital paises latam") +
+  theme(legend.position = "none")+
+  theme(panel.background = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank())
+
+#Primero, se llama a la función ggplot() para inicializar un objeto de gráfico.
+
+#Luego, se agrega una capa de histograma al gráfico utilizando la función geom_histogram(). El argumento data especifica el conjunto de datos a utilizar, mientras que el argumento aes(x = GDP.PC) define que la variable a representar en el eje X es GDP.PC. Los argumentos fill y color definen los colores de relleno y borde del histograma, respectivamente. El argumento binwidth establece el ancho de los intervalos del histograma en 2000 unidades.
+
+#A continuación, se agregan etiquetas de eje y título utilizando la función labs(). Los argumentos x, y, y title definen las etiquetas de los ejes X e Y, así como el título del gráfico.
+
+#Para eliminar la leyenda, se utiliza la función theme(legend.position = "none").
+
+#Finalmente, se ajusta el estilo del gráfico utilizando la función theme(). En este caso, se establece el fondo del panel y las líneas de la cuadrícula en blanco utilizando los argumentos panel.background = element_blank(), panel.grid.major = element_blank(), y panel.grid.minor = element_blank(), respectivamente.
